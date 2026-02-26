@@ -1,0 +1,38 @@
+plugins {
+    id 'idea'
+}
+
+idea {
+    module {
+        excludeDirs += file('.idea')
+        excludeDirs += file('build')
+    }
+}
+
+group = 'be.cegeka'
+version = '1.0-SNAPSHOT'
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    tasks.test {
+        useJUnitPlatform()
+    }
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter:6.0.2'
+        testImplementation 'org.junit.jupiter:junit-jupiter-params:6.0.2'
+        testImplementation 'org.junit.platform:junit-platform-launcher:6.0.2'
+        testImplementation 'org.assertj:assertj-core:3.27.6'
+    }
+}

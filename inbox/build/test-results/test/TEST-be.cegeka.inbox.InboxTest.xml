@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="be.cegeka.inbox.InboxTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-02-26T06:04:13.592Z" hostname="CI00368563" time="0.077">
+  <properties/>
+  <testcase name="whenMessageContainingPromoArrivesThenSendMessageToSpam()" classname="be.cegeka.inbox.InboxTest" time="0.073"/>
+  <testcase name="whenMessageContainingCVArrivesThenSendMessageToRecruitment()" classname="be.cegeka.inbox.InboxTest" time="0.001"/>
+  <testcase name="whenMessageContainingAdvertisementArrivesThenSendMessageToSpam()" classname="be.cegeka.inbox.InboxTest" time="0.001"/>
+  <testcase name="whenMessageArrivesThenSendMessageToReception()" classname="be.cegeka.inbox.InboxTest" time="0.001"/>
+  <testcase name="whenMessageContainingProposalArrivesThenSendMessageToSales()" classname="be.cegeka.inbox.InboxTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
